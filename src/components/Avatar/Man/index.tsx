@@ -13,6 +13,7 @@ import { ManT } from "./props";
 
 interface Props extends Omit<ManT, "gender"> {
    children?: React.ReactNode;
+   avatarRef: any;
 }
 
 export default function Man({
@@ -25,6 +26,7 @@ export default function Man({
    ears,
    glasses,
    headGear,
+   avatarRef,
 }: Props) {
    const { colors, styles } = useContext(StoreContext);
 
@@ -53,6 +55,7 @@ export default function Man({
                width={styles.width}
                height={styles.height}
                viewBox={styles.viewBox}
+               ref={avatarRef}
                fill='none'
                style={{ background: colors.bg, borderRadius: styles.borderRadius }}
                xmlns='http://www.w3.org/2000/svg'>
@@ -71,6 +74,7 @@ export default function Man({
                width={styles.width}
                height={styles.height}
                viewBox={styles.viewBox}
+               ref={avatarRef}
                fill='none'
                style={{ background: colors.bg, borderRadius: styles.borderRadius }}
                xmlns='http://www.w3.org/2000/svg'>
@@ -89,6 +93,7 @@ export default function Man({
                width={styles.width}
                height={styles.height}
                viewBox={styles.viewBox}
+               ref={avatarRef}
                fill='none'
                style={{ background: colors.bg, borderRadius: styles.borderRadius }}
                xmlns='http://www.w3.org/2000/svg'>

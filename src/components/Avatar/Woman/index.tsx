@@ -13,6 +13,7 @@ import { WomanT } from "./props";
 
 interface Props extends Omit<WomanT, "gender"> {
    children?: React.ReactNode;
+   avatarRef: any;
 }
 
 export default function Woman({
@@ -25,6 +26,7 @@ export default function Woman({
    ears,
    glasses,
    headGear,
+   avatarRef,
 }: Props) {
    const { colors, styles } = useContext(StoreContext);
 
@@ -56,6 +58,7 @@ export default function Woman({
                width={styles.width}
                height={styles.height}
                viewBox={styles.viewBox}
+               ref={avatarRef}
                fill='none'
                style={{ background: colors.bg, borderRadius: styles.borderRadius }}
                xmlns='http://www.w3.org/2000/svg'>
@@ -74,6 +77,7 @@ export default function Woman({
                width={styles.width}
                height={styles.height}
                viewBox={styles.viewBox}
+               ref={avatarRef}
                fill='none'
                style={{ background: colors.bg, borderRadius: styles.borderRadius }}
                xmlns='http://www.w3.org/2000/svg'>
