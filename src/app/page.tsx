@@ -38,8 +38,8 @@ export default function Page() {
 
    return (
       <div className='h-full flex flex-col items-center justify-center gap-6'>
-         <div className='flex-1 w-full flex justify-center items-center flex-col gap-4'>
-            <div className='max-w-xl gap-10 w-full inline-flex'>
+         <div className='flex-1 w-full flex justify-center items-center flex-col gap-4 p-2'>
+            <div className='max-w-xl gap-4 w-full inline-flex'>
                {man && (
                   <Avatar
                      gender='man'
@@ -69,7 +69,7 @@ export default function Page() {
                   />
                )}
             </div>
-            <div className='max-w-xl gap-10 w-full flex items-center'>
+            <div className='max-w-xl gap-4 w-full flex items-center'>
                <Button onClick={handleMan}>Man</Button>
                <Button onClick={handleWoman}>Woman</Button>
             </div>
